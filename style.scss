@@ -3,4 +3,29 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: sans-serif;
+}
+header {
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  background-color: white;
+  .header-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .header-box .logo-left img {
+    height: 100%;
+    width: 200px;
+  }
+  .header-box .a-desktop {
+    display: none;
+  }
+
+  .header-box .burger .menu-box .menu {
+    width: 25px;
+    height: 5px;
+    margin: 5px 0;
+    border-radius: 20px;
+    background-color: #999999;
+  }
 }
