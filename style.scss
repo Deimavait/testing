@@ -34,6 +34,7 @@ header {
 
 main .hero {
   padding: $padding-x1;
+  position: relative;
   h3 {
     font-size: 12pt;
     padding-bottom: 1.5rem;
@@ -51,15 +52,17 @@ main .hero {
     line-height: 1.5;
     color: #555555;
   }
-  .hero-right {
-    display: none;
-  }
+
   .hero-right img {
-    height: 100%;
-    width: 400px;
+    height: auto;
+    width: 355px;
+    position: absolute;
+    top: -30px;
+    left: 190px;
   }
   .hero-left {
     padding-bottom: 3rem;
+    padding-right: 5.5rem;
   }
   button {
     border: 3px solid transparent;
@@ -81,7 +84,7 @@ main .hero {
     border-radius: 30px;
     padding: 15px 40px;
     font-size: 14pt;
-    font-weight: bolder;
+    font-weight: 500;
   }
   button:hover {
     box-shadow: none;
@@ -109,5 +112,26 @@ main .gradient {
     font-weight: 400;
     padding: 0.5rem 1rem 1rem 1.5rem;
     font-size: 14pt;
+  }
+}
+.pictures {
+  height: 15rem;
+  width: 100%;
+  border: 1px solid black;
+  .pictures-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem 1.5rem 1rem 1.5rem;
+    .picture img {
+      width: 140px;
+      height: 100%;
+    }
+    .picture.hidden {
+      display: none;
+    }
   }
 }

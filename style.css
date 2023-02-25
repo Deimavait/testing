@@ -32,6 +32,7 @@ header .header-box .burger .menu-box .menu {
 
 main .hero {
   padding: 1.5rem 1.5rem 1rem 1.5rem;
+  position: relative;
 }
 main .hero h3 {
   font-size: 12pt;
@@ -50,15 +51,16 @@ main .hero p {
   line-height: 1.5;
   color: #555555;
 }
-main .hero .hero-right {
-  display: none;
-}
 main .hero .hero-right img {
-  height: 100%;
-  width: 400px;
+  height: auto;
+  width: 355px;
+  position: absolute;
+  top: -30px;
+  left: 190px;
 }
 main .hero .hero-left {
   padding-bottom: 3rem;
+  padding-right: 5.5rem;
 }
 main .hero button {
   border: 3px solid transparent;
@@ -69,7 +71,7 @@ main .hero button {
   border-radius: 30px;
   padding: 15px 40px;
   font-size: 14pt;
-  font-weight: bolder;
+  font-weight: 500;
 }
 main .hero button:hover {
   box-shadow: none;
@@ -90,4 +92,26 @@ main .gradient p {
   font-weight: 400;
   padding: 0.5rem 1rem 1rem 1.5rem;
   font-size: 14pt;
+}
+
+.pictures {
+  height: 15rem;
+  width: 100%;
+  border: 1px solid black;
+}
+.pictures .pictures-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 1.5rem 1rem 1.5rem;
+}
+.pictures .pictures-container .picture img {
+  width: 140px;
+  height: 100%;
+}
+.pictures .pictures-container .picture.hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
