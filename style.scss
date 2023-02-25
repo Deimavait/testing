@@ -14,21 +14,22 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-  }
-  .header-box .logo-left img {
-    height: 100%;
-    width: 200px;
-  }
-  .header-box .a-desktop {
-    display: none;
-  }
 
-  .header-box .burger .menu-box .menu {
-    width: 25px;
-    height: 5px;
-    margin: 5px 0;
-    border-radius: 20px;
-    background-color: #999999;
+    .logo-left img {
+      height: 100%;
+      width: 200px;
+    }
+    .a-desktop {
+      display: none;
+    }
+
+    .burger .menu-box .menu {
+      width: 25px;
+      height: 5px;
+      margin: 5px 0;
+      border-radius: 20px;
+      background-color: #999999;
+    }
   }
 }
 
@@ -67,6 +68,7 @@ main .hero {
   }
   button {
     border: 3px solid transparent;
+    cursor: pointer;
     box-shadow: 2px 1000px 1px #fff inset;
     background-image: linear-gradient(
         101deg,
@@ -81,15 +83,14 @@ main .hero {
         rgba(57, 255, 160, 1)
       );
     background-origin: border-box;
-    background-clip: content-box, border-box;
     border-radius: 30px;
     padding: 15px 40px;
     font-size: 14pt;
     font-weight: 500;
-  }
-  button:hover {
-    box-shadow: none;
-    color: white;
+    &:hover {
+      box-shadow: none;
+      color: white;
+    }
   }
 }
 main .gradient {
@@ -137,7 +138,7 @@ main .gradient {
 }
 .cards-signup {
   .section-container {
-    padding: 0.5rem 1.5rem 1rem 1.5rem;
+    padding: 0.5rem 0 1rem 1.5rem;
   }
   .top-box {
     padding-bottom: 4rem;
@@ -158,14 +159,13 @@ main .gradient {
       }
     }
     .card-flex {
-      /*display: flex;
-      flex-direction: row;
-      gap: 1rem;
-      overflow: scroll;*/
+      display: flex;
+      gap: 2rem;
+      overflow: scroll;
 
       .card {
-        height: 350px;
-        width: 250px;
+        min-height: 350px;
+        min-width: 250px;
         border: none;
         border-radius: 20px;
 
@@ -242,7 +242,7 @@ main .gradient {
     padding: $padding-x1;
     position: relative;
     overflow: hidden;
-    height: 585px;
+    height: 582px;
     border-top: 2px solid #eeeeee;
     border-bottom: 2px solid #eeeeee;
     h3 {
@@ -264,6 +264,7 @@ main .gradient {
       line-height: 1.5;
       color: #555555;
       width: 75%;
+      padding-top: 0.5rem;
     }
     .signup-right img {
       height: auto;
@@ -275,9 +276,17 @@ main .gradient {
     .signup-left {
       padding-bottom: 3rem;
       padding-right: 5.5rem;
+      .divider {
+        border-top: 1px solid #55555545;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        z-index: 1;
+      }
     }
     button {
       border: 3px solid transparent;
+      cursor: pointer;
       box-shadow: 2px 1000px 1px #fff inset;
       background-image: linear-gradient(
           101deg,
@@ -292,15 +301,14 @@ main .gradient {
           rgba(57, 255, 160, 1)
         );
       background-origin: border-box;
-      background-clip: content-box, border-box;
       border-radius: 30px;
       padding: 15px 40px;
       font-size: 14pt;
       font-weight: 500;
-    }
-    button:hover {
-      box-shadow: none;
-      color: white;
+      &:hover {
+        box-shadow: none;
+        color: white;
+      }
     }
   }
 }
@@ -341,7 +349,6 @@ footer {
       font-weight: 300;
       padding: 2rem 0 4rem 0;
     }
-
     div {
       display: flex;
       flex-direction: column;
@@ -351,7 +358,7 @@ footer {
         padding-bottom: 1rem;
         color: #555555;
         font-size: 14pt;
-        font-weight: 500;
+        font-weight: 600;
       }
       a {
         color: #555555;

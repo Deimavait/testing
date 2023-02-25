@@ -65,10 +65,10 @@ main .hero .hero-left {
 }
 main .hero button {
   border: 3px solid transparent;
+  cursor: pointer;
   box-shadow: 2px 1000px 1px #fff inset;
   background-image: linear-gradient(101deg, rgb(255, 57, 152), rgba(255, 255, 255, 0)), linear-gradient(101deg, rgb(255, 57, 152), rgb(255, 57, 57), rgb(255, 129, 57), rgb(57, 255, 160));
   background-origin: border-box;
-  background-clip: content-box, border-box;
   border-radius: 30px;
   padding: 15px 40px;
   font-size: 14pt;
@@ -117,7 +117,7 @@ main .gradient p {
 }
 
 .cards-signup .section-container {
-  padding: 0.5rem 1.5rem 1rem 1.5rem;
+  padding: 0.5rem 0 1rem 1.5rem;
 }
 .cards-signup .top-box {
   padding-bottom: 4rem;
@@ -139,14 +139,13 @@ main .gradient p {
   text-decoration: underline;
 }
 .cards-signup .top-box .card-flex {
-  /*display: flex;
-  flex-direction: row;
-  gap: 1rem;
-  overflow: scroll;*/
+  display: flex;
+  gap: 2rem;
+  overflow: scroll;
 }
 .cards-signup .top-box .card-flex .card {
-  height: 350px;
-  width: 250px;
+  min-height: 350px;
+  min-width: 250px;
   border: none;
   border-radius: 20px;
 }
@@ -217,7 +216,7 @@ main .gradient p {
   padding: 1.5rem 1.5rem 1rem 1.5rem;
   position: relative;
   overflow: hidden;
-  height: 585px;
+  height: 582px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
@@ -240,6 +239,7 @@ main .gradient p {
   line-height: 1.5;
   color: #555555;
   width: 75%;
+  padding-top: 0.5rem;
 }
 .cards-signup .signup-container .signup-right img {
   height: auto;
@@ -252,12 +252,19 @@ main .gradient p {
   padding-bottom: 3rem;
   padding-right: 5.5rem;
 }
+.cards-signup .signup-container .signup-left .divider {
+  border-top: 1px solid rgba(85, 85, 85, 0.2705882353);
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  z-index: 1;
+}
 .cards-signup .signup-container button {
   border: 3px solid transparent;
+  cursor: pointer;
   box-shadow: 2px 1000px 1px #fff inset;
   background-image: linear-gradient(101deg, rgb(255, 57, 152), rgba(255, 255, 255, 0)), linear-gradient(101deg, rgb(255, 57, 152), rgb(255, 57, 57), rgb(255, 129, 57), rgb(57, 255, 160));
   background-origin: border-box;
-  background-clip: content-box, border-box;
   border-radius: 30px;
   padding: 15px 40px;
   font-size: 14pt;
@@ -314,7 +321,7 @@ footer .footer-mid div h2 {
   padding-bottom: 1rem;
   color: #555555;
   font-size: 14pt;
-  font-weight: 500;
+  font-weight: 600;
 }
 footer .footer-mid div a {
   color: #555555;
