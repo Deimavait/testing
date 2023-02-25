@@ -266,4 +266,58 @@ main .gradient p {
 .cards-signup .signup-container button:hover {
   box-shadow: none;
   color: white;
+}
+
+footer .footer-top {
+  padding: 3rem 1.5rem 3rem 1.5rem;
+}
+footer .footer-top img {
+  width: 170px;
+  height: auto;
+}
+footer .footer-top p {
+  padding: 1rem 0 1rem 0;
+  font-size: 14pt;
+  font-weight: 300;
+  color: #555555;
+}
+footer .footer-top .icons-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+footer .footer-top .icons-top img {
+  width: 20px;
+  height: auto;
+}
+footer .footer-mid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 6rem 3rem 1.5rem;
+}
+footer .footer-mid p {
+  font-size: 14pt;
+  color: #999999;
+  font-weight: 300;
+  padding: 2rem 0 4rem 0;
+}
+footer .footer-mid div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+footer .footer-mid div h2 {
+  padding-bottom: 1rem;
+  color: #555555;
+  font-size: 14pt;
+  font-weight: 500;
+}
+footer .footer-mid div a {
+  color: #555555;
+  font-size: 16pt;
+  font-weight: 300;
 }/*# sourceMappingURL=style.css.map */
