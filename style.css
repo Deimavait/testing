@@ -95,9 +95,8 @@ main .gradient p {
 }
 
 .pictures {
-  height: 15rem;
+  height: 14rem;
   width: 100%;
-  border: 1px solid black;
 }
 .pictures .pictures-container {
   display: flex;
@@ -114,4 +113,84 @@ main .gradient p {
 }
 .pictures .pictures-container .picture.hidden {
   display: none;
+}
+
+.cards-signup .section-container {
+  padding: 0.5rem 1.5rem 1rem 1.5rem;
+}
+.cards-signup .top-box h2 {
+  font-weight: 400;
+  font-size: 28pt;
+}
+.cards-signup .top-box p {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  font-weight: 400;
+  font-size: 14pt;
+  line-height: 1.5;
+  color: #555555;
+}
+.cards-signup .top-box p a {
+  color: #555555;
+  text-decoration: underline;
+}
+.cards-signup .top-box .card {
+  height: 350px;
+  width: 250px;
+  border: none;
+  border-radius: 20px;
+}
+.cards-signup .top-box .card .card-top {
+  height: 236px;
+  width: 100%;
+  border: none;
+}
+.cards-signup .top-box .card .card-top img {
+  height: auto;
+  width: 100%;
+}
+.cards-signup .top-box .card .card-bottom {
+  background-color: #eeeeee;
+  height: 112px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.cards-signup .top-box .card .card-bottom .row-container {
+  padding-top: 1rem;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-1 h5 {
+  font-size: 9pt;
+  display: inline-block;
+  color: #ff8139;
+  font-weight: 300;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-1 p {
+  font-size: 9pt;
+  display: inline-block;
+  padding: 0;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5rem 1rem 0 1rem;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-2 h4 {
+  font-size: 12pt;
+  font-weight: 500;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 1rem 0 1rem;
+}
+.cards-signup .top-box .card .card-bottom .row-container .row-3 p {
+  font-size: 12pt;
 }/*# sourceMappingURL=style.css.map */
