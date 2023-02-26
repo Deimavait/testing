@@ -143,7 +143,7 @@ main .gradient {
 }
 .cards-signup {
   .section-container {
-    padding: 0.5rem 0 1rem 1.5rem;
+    padding: 0.5rem 1.5rem 1rem 1.5rem;
   }
   .top-box {
     padding-bottom: 4rem;
@@ -165,18 +165,18 @@ main .gradient {
     }
     .card-flex {
       display: flex;
-      gap: 2rem;
+      gap: 2.5rem;
       overflow: scroll;
 
       .card {
-        min-height: 350px;
-        min-width: 250px;
+        min-height: 400px;
+        min-width: 290px;
         border: none;
         border-radius: 20px;
 
         .card-top {
-          height: 236px;
-          width: 100%;
+          height: 278px;
+          width: 290px;
           border: none;
           img {
             height: auto;
@@ -185,7 +185,7 @@ main .gradient {
         }
         .card-bottom {
           background-color: #eeeeee;
-          height: 112px;
+          height: 122px;
           border-bottom-left-radius: 20px;
           border-bottom-right-radius: 20px;
 
@@ -318,64 +318,72 @@ main .gradient {
   }
 }
 footer {
-  .footer-top {
-    padding: 3rem 1.5rem 3rem 1.5rem;
-    img {
-      width: 170px;
-      height: auto;
+  .footer-flex {
+    .footer-top {
+      padding: 3rem 1.5rem 3rem 1.5rem;
+      img {
+        width: 170px;
+        height: auto;
+      }
+      p {
+        padding: 1rem 0 1rem 0;
+        font-size: 14pt;
+        font-weight: 300;
+        color: #555555;
+      }
+      .icons-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1rem;
+        img {
+          width: 20px;
+          height: auto;
+        }
+      }
     }
-    p {
-      padding: 1rem 0 1rem 0;
-      font-size: 14pt;
-      font-weight: 300;
-      color: #555555;
-    }
-    .icons-top {
+    .footer-mid {
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
-      gap: 1rem;
-      img {
-        width: 20px;
-        height: auto;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 2rem;
+      padding: 0 6rem 3rem 1.5rem;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        h2 {
+          padding-bottom: 1rem;
+          color: #555555;
+          font-size: 14pt;
+          font-weight: 600;
+        }
+        a {
+          color: #555555;
+          font-size: 16pt;
+          font-weight: 300;
+        }
       }
     }
   }
-  .footer-mid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 2rem;
-    padding: 0 6rem 3rem 1.5rem;
+  .footer-bottom {
     p {
       font-size: 14pt;
       color: #999999;
       font-weight: 300;
-      padding: 2rem 0 4rem 0;
+      padding: 2rem 1.5rem 4rem 1.5rem;
     }
-    div {
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      h2 {
-        padding-bottom: 1rem;
-        color: #555555;
-        font-size: 14pt;
-        font-weight: 600;
-      }
-      a {
-        color: #555555;
-        font-size: 16pt;
-        font-weight: 300;
-      }
+    p.none {
+      display: none;
     }
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 1440px) {
   header {
-    padding: 3rem 3rem 10rem 3rem;
+    padding: 3rem;
     .header-box {
       align-items: center;
       .logo-left img {
@@ -399,12 +407,13 @@ footer {
     }
     .hero-left {
       width: 50%;
+      padding: 7rem 0 0 0;
     }
     .hero-right {
       width: 50%;
       img {
         position: unset;
-        width: 550px;
+        width: 625px;
         height: 100%;
       }
     }
@@ -427,9 +436,52 @@ footer {
       }
     }
   }
-}
-.cards-signup {
-  .section-container {
-    padding: 0.5rem 3rem 1rem 3rem;
+
+  .cards-signup {
+    padding: 0 3rem;
+
+    .signup-container {
+      height: 450px;
+      display: flex;
+      h3 {
+        padding: 5rem 0 1rem 0;
+        font-size: 10pt;
+      }
+      .signup-left {
+        .divider {
+          display: none;
+        }
+      }
+      .signup-right {
+        img {
+          width: 170px;
+          right: 150px;
+          top: 64px;
+          left: auto;
+        }
+      }
+    }
+  }
+  footer {
+    .footer-flex {
+      display: flex;
+      justify-content: space-between;
+      .footer-top {
+        padding: 6rem 0 3rem 3rem;
+      }
+      .footer-mid {
+        padding: 6rem 3rem 3rem 0;
+      }
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      p.none {
+        display: unset;
+      }
+      p {
+        padding: 2rem 3rem 4rem 3rem;
+      }
+    }
   }
 }
