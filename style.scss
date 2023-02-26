@@ -21,6 +21,11 @@ header {
     }
     .a-desktop {
       display: none;
+      a {
+        color: #555555;
+        padding: 0 0.5rem;
+        font-weight: 300;
+      }
     }
 
     .burger .menu-box .menu {
@@ -366,5 +371,65 @@ footer {
         font-weight: 300;
       }
     }
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 3rem 3rem 10rem 3rem;
+    .header-box {
+      align-items: center;
+      .logo-left img {
+        width: 180px;
+      }
+
+      .a-desktop {
+        display: unset;
+      }
+      .burger {
+        display: none;
+      }
+    }
+  }
+  main .hero {
+    padding: 0 0 6rem 3rem;
+    position: unset;
+    display: flex;
+    h1 {
+      font-size: 58pt;
+    }
+    .hero-left {
+      width: 50%;
+    }
+    .hero-right {
+      width: 50%;
+      img {
+        position: unset;
+        width: 550px;
+        height: 100%;
+      }
+    }
+  }
+  .gradient {
+    padding: 0 3rem;
+    .gradient-body {
+      border-radius: 20px;
+      h2 {
+        padding: 9rem 1rem 1rem 1.5rem;
+      }
+    }
+  }
+  .pictures {
+    .pictures-container {
+      justify-content: space-between;
+      padding: 6rem 3rem 1rem 3rem;
+      .picture.hidden {
+        display: unset;
+      }
+    }
+  }
+}
+.cards-signup {
+  .section-container {
+    padding: 0.5rem 3rem 1rem 3rem;
   }
 }

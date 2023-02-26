@@ -22,6 +22,11 @@ header .header-box .logo-left img {
 header .header-box .a-desktop {
   display: none;
 }
+header .header-box .a-desktop a {
+  color: #555555;
+  padding: 0 0.5rem;
+  font-weight: 300;
+}
 header .header-box .burger .menu-box .menu {
   width: 25px;
   height: 5px;
@@ -327,4 +332,60 @@ footer .footer-mid div a {
   color: #555555;
   font-size: 16pt;
   font-weight: 300;
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 3rem 3rem 10rem 3rem;
+  }
+  header .header-box {
+    align-items: center;
+  }
+  header .header-box .logo-left img {
+    width: 180px;
+  }
+  header .header-box .a-desktop {
+    display: unset;
+  }
+  header .header-box .burger {
+    display: none;
+  }
+  main .hero {
+    padding: 0 0 6rem 3rem;
+    position: unset;
+    display: flex;
+  }
+  main .hero h1 {
+    font-size: 58pt;
+  }
+  main .hero .hero-left {
+    width: 50%;
+  }
+  main .hero .hero-right {
+    width: 50%;
+  }
+  main .hero .hero-right img {
+    position: unset;
+    width: 550px;
+    height: 100%;
+  }
+  .gradient {
+    padding: 0 3rem;
+  }
+  .gradient .gradient-body {
+    border-radius: 20px;
+  }
+  .gradient .gradient-body h2 {
+    padding: 9rem 1rem 1rem 1.5rem;
+  }
+  .pictures .pictures-container {
+    justify-content: space-between;
+    padding: 6rem 3rem 1rem 3rem;
+  }
+  .pictures .pictures-container .picture.hidden {
+    display: unset;
+  }
+}
+.cards-signup .section-container {
+  padding: 0.5rem 3rem 1rem 3rem;
 }/*# sourceMappingURL=style.css.map */
