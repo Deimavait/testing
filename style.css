@@ -337,6 +337,14 @@ footer .footer-bottom p.none {
   display: none;
 }
 
+@media (min-width: 376px) and (max-width: 1439px) {
+  main .hero .hero-right {
+    display: none;
+  }
+  .cards-signup .signup-container .signup-right {
+    display: none;
+  }
+}
 @media (min-width: 1440px) {
   header {
     padding: 3rem;
@@ -354,7 +362,7 @@ footer .footer-bottom p.none {
     display: none;
   }
   main .hero {
-    padding: 0 0 6rem 3rem;
+    padding: 0 0 4rem 3rem;
     position: unset;
     display: flex;
   }
@@ -392,9 +400,16 @@ footer .footer-bottom p.none {
   .cards-signup {
     padding: 0 3rem;
   }
+  .cards-signup .section-container {
+    padding: 0;
+  }
+  .cards-signup .section-container .top-box {
+    padding-bottom: 6rem;
+  }
   .cards-signup .signup-container {
     height: 450px;
     display: flex;
+    padding-left: 0;
   }
   .cards-signup .signup-container h3 {
     padding: 5rem 0 1rem 0;
@@ -405,7 +420,7 @@ footer .footer-bottom p.none {
   }
   .cards-signup .signup-container .signup-right img {
     width: 170px;
-    right: 150px;
+    right: 260px;
     top: 64px;
     left: auto;
   }
